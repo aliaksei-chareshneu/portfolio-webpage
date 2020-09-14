@@ -1,5 +1,5 @@
 import React from 'react'
-import { Jumbotron, Container, Navbar,Nav,Form,FormControl,Button } from 'react-bootstrap'
+import { Jumbotron, Container, Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap'
 
 const App = () => {
     return (
@@ -9,6 +9,7 @@ const App = () => {
                 <Nav className="mr-auto">
                     <Nav.Link href="#home">Home</Nav.Link>
                     <Nav.Link href="#about">About</Nav.Link>
+                    <Nav.Link href="#cv">CV</Nav.Link>
                     <Nav.Link href="#contact">Contact</Nav.Link>
                 </Nav>
                 {/* <Form inline>
@@ -22,6 +23,9 @@ const App = () => {
             <Container>
                 Container
             </Container>
+            <footer>
+                <small>&copy; 2020 - Aliaksei Chareshneu. All rights reserved.</small>
+            </footer>
         </div>
     )
 }
