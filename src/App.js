@@ -1,22 +1,11 @@
 import React from 'react'
-import { Jumbotron, Container, Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap'
+import { Jumbotron, Container } from 'react-bootstrap'
+import TopNavigation from './components/TopNavigation'
 
 const App = () => {
     return (
         <div>
-            <Navbar bg="dark" variant="dark">
-                <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-                <Nav className="mr-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#about">About</Nav.Link>
-                    <Nav.Link href="#cv">CV</Nav.Link>
-                    <Nav.Link href="#contact">Contact</Nav.Link>
-                </Nav>
-                {/* <Form inline>
-                    <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                    <Button variant="outline-info">Search</Button>
-                </Form> */}
-            </Navbar>
+            <TopNavigation />
             <Jumbotron>
                 <h1>Hi there!</h1>
             </Jumbotron>
