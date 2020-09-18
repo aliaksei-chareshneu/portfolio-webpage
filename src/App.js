@@ -7,7 +7,9 @@ const App = () => {
         <div>
             <TopNavigation />
             <Jumbotron>
-                <h1>Hi there!</h1>
+                <h1>Hi there! I'm Aliaksei, web developer, PhD student in bioinformatics, freelancer, researcher, musician, and a storyteller.
+                    I like to help people out, and I firmly believe that good does always triumph over evil.
+                </h1>
             </Jumbotron>
             <Container>
                 Container
