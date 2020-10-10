@@ -1,3 +1,351 @@
 body {
-    /* padding-top: 56px; */
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+html, body {
+    overflow-x: hidden;
+	  /* overflow-y: hidden; */
+    background: #000;
+}
+
+/* TEXT EMPHASIS */
+.em1 {
+    opacity: 0.87;
+}
+
+.em2 {
+    opacity: 0.6;
+}
+
+.em3 {
+    opacity: 0.38;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.content {
+    /* width: 100%; */
+    position: absolute;
+    /* z-index: 2; */
+}
+
+
+/* NAVIGATION BUTTON */
+.nav-btn {
+    color: gray;
+    font-weight: 700;
+    text-decoration: underline;
+    /* text-decoration: none; */
+    font-size: 1.5rem;
+}
+
+a.nav-btn:hover {
+    color: rgb(192, 192, 192);
+    text-decoration: underline;
+}
+
+
+/* BUTTON CUSTOMIZATION */
+.btn-secondary, .btn-secondary:hover {
+    color: black;
+}
+
+.btn-primary {
+    /* Web safe colour? */
+    background-color: #0176a8;
+    border-color: #0176a8;
+    color: black;
+}
+
+.btn-primary:hover {
+    background-color: #005f88;
+    border-color: #005f88;
+    color: black;
+}
+
+/* Font awesome icons */
+.fab {
+    opacity: 0.6;
+    /* font-weight: 900; */
+}
+
+.fab:hover {
+    opacity: 1.0;
+}
+
+/* Fixed footer */
+.footer {
+    z-index: 10;
+    /* position: fixed; */
+    /* left: 0; */
+    /* bottom: 0; */
+    width: 100%;
+    /* background-color: red; */
+    /* color: white; */
+    text-align: right;
+    padding: 2rem;
+}
+
+.footer > i {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+/* Stacking context */
+#main-content {
+    z-index: 1;
+}
+
+#page-wrapper {
+    /* Will prevent black stripe under the fog on iPad or similar */
+    min-height: 100vh; /* might need to be 100% instead of 100vh */
+    min-width: 100%; /* 100vw does not account for vertical scroll bar */
+    position: absolute;
+    /* Or relative */
+
+    /* height: 100%; */
+    /* On mobile it will place fog in the middle if the content is long */
+
+    /* margin: 0;
+    padding: 0; */
+}
+
+/* Fog is always at the bottom */
+#fog-wrapper {
+    bottom: 0;
+}
+
+/* height: 100 % => fog in the middle on mobile */
+/* bottom: 0 => fog in the middle on desktop if content is not long */
+
+/* Flex for footer at the bottom */
+
+#page-wrapper {
+     min-height: 100%;
+display: flex;
+flex-direction: column;
+align-items: stretch;
+}
+
+main {
+    flex-grow: 1;
+}
+
+#page-header, main, #page-footer {
+    flex-shrink: 0;
+}
+
+/* Project item in the list of projects*/
+article.card {
+    background-color: rgba(245, 245, 245, 0.05) !important;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* FOG ANIMATION */
+
+.fogwrapper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
+    -webkit-filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
+}
+
+/* Fog wrapper for landing page */
+
+/* #fog-wrapper {
+    overflow-x: hidden;
+    position: absolute;
+    height: 60vw;
+    width: 100vw;
+    top: calc(100vh - 100vw*0.6);
+    top: max(100vh - 100vw*0.6, 0px);
+} */
+
+#foglayer_01 {
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+    -webkit-animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+}
+
+#foglayer_01 .image01, #foglayer_01 .image02 {
+    background: url("img/fog1.png") repeat-x top left transparent;
+    background-size: 100%;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#foglayer_02 {
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
+    -webkit-animation: foglayer_01_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
+}
+
+#foglayer_02 .image01, #foglayer_02 .image02 {
+    background: url("img/fog2.png") repeat-x top left transparent;
+    background-size: 100%;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#foglayer_03 {
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
+    -webkit-animation: foglayer_01_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
+}
+
+#foglayer_03 .image01, #foglayer_03 .image02 {
+    background: url("img/fog2.png") repeat-x top left transparent;
+    background-size: 100%;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+@keyframes foglayer_01_opacity {
+    0% {
+        opacity: .1;
+    }
+    22% {
+        opacity: .5;
+    }
+    40% {
+        opacity: .28;
+    }
+    58% {
+        opacity: .4;
+    }
+    80% {
+        opacity: .16;
+    }
+    100% {
+        opacity: .1;
+    }
+}
+
+@-webkit-keyframes foglayer_01_opacity {
+    0% {
+        opacity: .1;
+    }
+    22% {
+        opacity: .5;
+    }
+    40% {
+        opacity: .28;
+    }
+    58% {
+        opacity: .4;
+    }
+    80% {
+        opacity: .16;
+    }
+    100% {
+        opacity: .1;
+    }
+}
+
+@keyframes foglayer_02_opacity {
+    0% {
+        opacity: .5;
+    }
+    25% {
+        opacity: .2;
+    }
+    50% {
+        opacity: .1;
+    }
+    80% {
+        opacity: .3;
+    }
+    100% {
+        opacity: .5;
+    }
+}
+
+@-webkit-keyframes foglayer_02_opacity {
+    0% {
+        opacity: .5;
+    }
+    25% {
+        opacity: .2;
+    }
+    50% {
+        opacity: .1;
+    }
+    80% {
+        opacity: .3;
+    }
+    100% {
+        opacity: .5;
+    }
+}
+
+@keyframes foglayer_03_opacity {
+    0% {
+        opacity: .8;
+    }
+    27% {
+        opacity: .2;
+    }
+    52% {
+        opacity: .6;
+    }
+    68% {
+        opacity: .3;
+    }
+    100% {
+        opacity: .8;
+    }
+}
+
+@-webkit-keyframes foglayer_03_opacity {
+    0% {
+        opacity: .8;
+    }
+    27% {
+        opacity: .2;
+    }
+    52% {
+        opacity: .6;
+    }
+    68% {
+        opacity: .3;
+    }
+    100% {
+        opacity: .8;
+    }
+}
+
+@keyframes foglayer_moveme {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+@-webkit-keyframes foglayer_moveme {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -100%;
+    }
 }

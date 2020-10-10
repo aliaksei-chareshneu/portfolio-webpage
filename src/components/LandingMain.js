@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap'
 
-const Main = () => {
+const LandingMain = () => {
     return (
         // TODO: Rewrite as react-bootstrap
         // <div className="text-white text-center d-flex align-items-center min-vh-100" style={{background: "black"}}>
@@ -30,12 +30,11 @@ const Main = () => {
         // </Container>
 
         // </div>
-        <div className="container-fluid" style={{position: "absolute", "z-index": "2"}}>
-		<div id="welcome-message" className="text-center">
-		
-			{/* <h1 className="em1" style="color: blue">
+		<main id="main-content" className="text-center">
+        <div className="container-fluid">
+        <h1 className="em1" style={{color: "blue"}}>
 				TODO: Technology icons go under the welcome message!
-			</h1> */}
+			</h1>
 			<h1 className="em1">
 				This is an em1 text
 			</h1>
@@ -79,11 +78,9 @@ const Main = () => {
 					</p>
 				</div>
 			</div>
-		</div>
-	</div>
-
-
+        </div>
+		</main>
     )
 }
 
-export default Main
+export default LandingMain

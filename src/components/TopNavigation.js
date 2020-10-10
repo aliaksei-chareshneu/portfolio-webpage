@@ -3,19 +3,21 @@ import { Navbar, Nav} from 'react-bootstrap'
 
 const TopNavigation = () => {
     return (
-        <Navbar collapseOnSelect fixed="top" expand="md" bg="dark" variant="dark">
-            <Navbar.Brand href="#home">Logo goes here</Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="mr-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#about">About</Nav.Link>
-                    <Nav.Link href="#cv">CV</Nav.Link>
-                    <Nav.Link href="#contact">Contact</Nav.Link>
+        <header id="page-header">
+            {/* Here could be a logo or a search bar, not inside nav element */}
+            <Navbar collapseOnSelect sticky="top" expand="md" variant="dark">
+            <Navbar.Toggle aria-controls="topNavbar" />
+            <Navbar.Collapse id="topNavbar">
+                <Nav className="mr-auto mt-2 mt-lg-0 font-weight-bold">
+                    {/* In case something breaks, try "react router boostrap" instead */}
+                    <Nav.Link href="/">Home</Nav.Link>
+                    <Nav.Link href="/projects">Projects</Nav.Link>
+                    <Nav.Link href="/cv">CV</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
-
         </Navbar>
+        </header>
+        
     )
 }
 
