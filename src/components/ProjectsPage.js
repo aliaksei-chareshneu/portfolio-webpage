@@ -6,13 +6,11 @@ import Footer from './Footer'
 
 const ProjectsPage = () => {
     return (
-        <div>
-            <div id="page-wrapper">
-                <TopNavigation />
-                <ProjectsMain />
-                <Fog />
-                <Footer />
-            </div>
+        <div id="page-wrapper">
+            <TopNavigation />
+            <ProjectsMain />
+            <Fog />
+            <Footer />
         </div>
     )
 }
