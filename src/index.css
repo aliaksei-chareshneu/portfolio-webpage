@@ -28,18 +28,11 @@ html, body {
     opacity: 0.38;
 }
 
-.center {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+/* TODO: check on w3.org and apply for outer div */
+.vertical-center {
+    display: flex;
+    align-items: center;
 }
-
-.content {
-    /* width: 100%; */
-    position: absolute;
-    /* z-index: 2; */
-}
-
 
 /* NAVIGATION BUTTON */
 .nav-btn {

@@ -30,7 +30,7 @@ const LandingMain = () => {
         // </Container>
 
 		// </div>
-		<main id="main-content" className="text-center">
+		<main id="main-content" className="text-center vertical-center">
 			<Container fluid>
 				<Row>
 					<Col>
