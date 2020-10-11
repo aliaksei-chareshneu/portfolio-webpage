@@ -68,12 +68,12 @@ a.nav-btn:hover {
 }
 
 /* Font awesome icons */
-.fab {
+.fab, .fas {
     opacity: 0.6;
     /* font-weight: 900; */
 }
 
-.fab:hover {
+.fab:hover, .fas:hover {
     opacity: 1.0;
 }
 
@@ -90,9 +90,10 @@ a.nav-btn:hover {
     padding: 2rem;
 }
 
-.footer > i {
+.footer > a {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+    color: #fff;
 }
 
 /* Stacking context */

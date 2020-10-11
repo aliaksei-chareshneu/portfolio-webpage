@@ -3,7 +3,6 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 
 const LandingMain = () => {
     return (
-        
 		<main id="main-content" className="text-center vertical-center">
 			<Container fluid style={{maxWidth: "700px"}}>
 				<Row>
