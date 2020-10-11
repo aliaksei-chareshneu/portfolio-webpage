@@ -29,10 +29,35 @@ const LandingMain = () => {
         //     </Row>
         // </Container>
 
-        // </div>
+		// </div>
 		<main id="main-content" className="text-center">
+			<Container fluid>
+				<Row>
+					<Col>
+						<section>
+							<h1 className="em1">Hi, I am Aliaksei!</h1>
+							<p className="lead em2">
+								I build web apps, help people, experiment with technologies, and tell stories.
+							</p>
+						</section>
+					</Col>
+				</Row>
+			</Container>
+		</main>
+
+		/* <main id="main-content" className="text-center">
         <div className="container-fluid">
-        <h1 className="em1" style={{color: "blue"}}>
+			<div className="row">
+				<div className="col">
+					<div style={{maxWidth: "600px"}}>
+						<h1>Hi, I am Aliaksei!</h1>
+						<p className="lead">
+							I build web apps, help people, experiment with technologies, and tell stories.
+						</p>
+					</div>
+				</div>
+			</div>
+        	<h1 className="em1" style={{color: "blue"}}>
 				TODO: Technology icons go under the welcome message!
 			</h1>
 			<h1 className="em1">
@@ -71,7 +96,7 @@ const LandingMain = () => {
 					</a>
 				</div>
 			</div>
-			<div className="row m-3">
+			<div className="row m-3"> 
 				<div className="col">
 					<p>
 						Some text
@@ -79,7 +104,7 @@ const LandingMain = () => {
 				</div>
 			</div>
         </div>
-		</main>
+		</main>*/
     )
 }
 
