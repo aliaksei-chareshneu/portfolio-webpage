@@ -31,7 +31,7 @@ const LandingMain = () => {
 
         // </div>
         <main id="main-content">
-            <div className="container-fluid" style={{ "z-index": "2" }}>
+            <div className="container-fluid">
                 <h1>CV</h1>
             </div>
         </main>
