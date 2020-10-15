@@ -11,7 +11,7 @@ const Footer = () => {
             <a href="https://twitter.com/AChareshneu" target="_blank" rel="noopener noreferrer" title="Twitter">
                 <i className="fab fa-twitter fa-2x "></i>
             </a>
-            <a href="" target="_blank" rel="noopener noreferrer" title="Facebook">
+            <a href="https://www.facebook.com/alexey.chereshnev.3" target="_blank" rel="noopener noreferrer" title="Facebook">
                 <i className="fab fa-facebook fa-2x "></i>
             </a>
             <a href="https://vk.com/id48672698" target="_blank" rel="noopener noreferrer" title="VKontakte">
