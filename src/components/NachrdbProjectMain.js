@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap'
+// import nachrdbLogo from '../img/nachrdb-logo-low-res.jpg'
 
 const NachrdbProjectMain = () => {
     return (
@@ -7,7 +8,10 @@ const NachrdbProjectMain = () => {
             <Container>
                 <Row>
                     <Col sm={3}>
-                        Here should be NAChRDB logo
+                        {/* Slow in local server, may be better in build? */}
+                        {/* <img src={nachrdbLogo} alt="Here should be NAChRDB logo" title="NAChRDB logo" className="img-fluid" /> */}
+
+                        <img src={`${process.env.PUBLIC_URL}/nachrdb-logo-low-res.jpg`} alt="Here should be NAChRDB logo" title="NAChRDB logo" className="img-fluid" />
                     </Col>
                     <Col sm={9}>
                         <section>
