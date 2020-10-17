@@ -10,9 +10,9 @@ const TopNavigation = () => {
             <Navbar.Collapse id="topNavbar">
                 <Nav className="mr-auto mt-2 mt-lg-0 font-weight-bold">
                     {/* In case something breaks, try "react router boostrap" instead */}
-                    <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="/projects">Projects</Nav.Link>
-                    <Nav.Link href="/cv">CV</Nav.Link>
+                    <Nav.Link href="/portfolio-webpage/">Home</Nav.Link>
+                    <Nav.Link href="/portfolio-webpage/projects">Projects</Nav.Link>
+                    <Nav.Link href="/portfolio-webpage/cv">CV</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
