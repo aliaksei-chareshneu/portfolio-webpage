@@ -16,7 +16,7 @@ const LandingMain = () => {
             </Col>
             <Col sm={9}>
               <Card.Body>
-                <Card.Title>NAChRDB</Card.Title>
+                <Card.Title>NAChRDB - Bioinformatics Web Application and Database for Ion Channel Researchers</Card.Title>
                 <Card.Text>NAChRDB is a web application and a database of structural-functional information on nicotinic acetylcholine receptors (nAChRs) – proteins that transfer chemical signals across the nervous system, allowing us to think, feel and move. <a href="/portfolio-webpage/projects/nachrdb">Read more...</a></Card.Text>
                 <Card.Text><strong>Technologies:</strong> HTML5, Bootstrap, CSS3.0, JavaScript (ES6), JQuery, datatables, intro.js, Google Analytics, Google Tag Manager </Card.Text>
               </Card.Body>
