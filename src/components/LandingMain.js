@@ -18,13 +18,13 @@ const LandingMain = () => {
 				<Row>
 					{/* TODO: links to pages on buttons */}
 					<Col>
-						<Button variant="dark" block>Projects</Button>
+						<Button variant="dark" size="lg" block>Projects</Button>
 					</Col>
 					<Col>
-						<Button variant="primary" block>CV</Button>
+						<Button variant="primary" size="lg" block>CV</Button>
 					</Col>
 					<Col>
-						<Button variant="secondary" block>About</Button>
+						<Button variant="secondary" size="lg" block>About</Button>
 					</Col>
 				</Row>
 				<Row>
