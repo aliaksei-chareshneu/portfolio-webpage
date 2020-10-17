@@ -16,6 +16,7 @@ const LandingMain = () => {
 					</Col>
 				</Row>
 				<Row>
+					{/* TODO: links to pages on buttons */}
 					<Col>
 						<Button variant="dark" block>Projects</Button>
 					</Col>
