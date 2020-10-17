@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col, Button } from 'react-bootstrap'
+import { Container, Row, Col, Button, Carousel } from 'react-bootstrap'
 // import nachrdbLogo from '../img/nachrdb-logo-low-res.jpg'
 
 const NachrdbProjectMain = () => {
@@ -49,6 +49,12 @@ const NachrdbProjectMain = () => {
                                     <li>Configured and deployed GTM web analytics tags connected with Google Analytics</li>
                                     <li>Implemented feedback/contribution forms with basic client and server-side validation</li>
                                 </ul>
+                            </section>
+                            <section>
+                                <h3>NAChRDB live</h3>
+                                <p>
+                                    Check the actual NAChRDB web page <a href="https://crocodile.ncbr.muni.cz/Apps/NAChRDB/" title="NAChRDB webpage">here</a>
+                                </p>
                             </section>
                         </article>
                     </Col>
