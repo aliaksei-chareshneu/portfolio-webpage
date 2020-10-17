@@ -3,7 +3,7 @@ import { Navbar, Nav} from 'react-bootstrap'
 
 const TopNavigation = () => {
     return (
-        <header id="page-header">
+        <header id="page-header" className="mb-3">
             {/* Here could be a logo or a search bar, not inside nav element */}
             <Navbar collapseOnSelect sticky="top" expand="md" variant="dark">
             <Navbar.Toggle aria-controls="topNavbar" />
