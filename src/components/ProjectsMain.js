@@ -9,14 +9,15 @@ const LandingMain = () => {
           <Row noGutters={true}>
             <Col sm={3}>
               <div className="project-image-container bg-white">
-                <Image src={`${process.env.PUBLIC_URL}/nachrdb-logo-low-res.jpg`} className="card-img" />
+                <a href="/portfolio-webpage/projects/nachrdb" title="NAChRDB project page">
+                  <Image src={`${process.env.PUBLIC_URL}/nachrdb-logo-low-res.jpg`} className="card-img" />
+                </a>
               </div>
             </Col>
             <Col sm={9}>
               <Card.Body>
                 <Card.Title>NAChRDB</Card.Title>
-                {/* TODO: shorten text (twice) */}
-                <Card.Text>NAChRDB is a web application and a database of structural-functional information on nicotinic acetylcholine receptors (nAChRs) – proteins that transfer chemical signals across the nervous system, allowing us to think, feel and move.</Card.Text>
+                <Card.Text>NAChRDB is a web application and a database of structural-functional information on nicotinic acetylcholine receptors (nAChRs) – proteins that transfer chemical signals across the nervous system, allowing us to think, feel and move. <a href="/portfolio-webpage/projects/nachrdb">Read more...</a></Card.Text>
                 <Card.Text><strong>Technologies:</strong> HTML5, Bootstrap, CSS3.0, JavaScript (ES6), JQuery, datatables, intro.js, Google Analytics, Google Tag Manager </Card.Text>
               </Card.Body>
             </Col>
