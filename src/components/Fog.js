@@ -2,7 +2,7 @@ import React from 'react'
 
 const Fog = () => {
     return (
-        <div id="fog-wrapper" style={{"overflow-x": "hidden", position: "absolute", "max-height": "75vh", height: "60vw", width: "100vw"}}>
+        <div id="fog-wrapper" style={{"overflowX": "hidden", position: "absolute", "maxHeight": "75vh", height: "60vw", width: "100vw"}}>
             <div id="foglayer_01" className="fog">
                 <div className="image01"></div>
                 <div className="image02"></div>
