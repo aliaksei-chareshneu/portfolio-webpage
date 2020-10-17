@@ -10,10 +10,10 @@ const App = () => {
     return (
         // <div className="min-vh-100">
         <Switch>
-            <Route path="/projects/nachrdb" component={NachrdbProjectPage} />
-            <Route path="/" component={LandingPage} exact />
-            <Route path="/projects" component={ProjectsPage} />
-            <Route path="/cv" component={CvPage} />
+            <Route path="/portfolio-webpage/projects/nachrdb" component={NachrdbProjectPage} />
+            <Route path="/portfolio-webpage" component={LandingPage} exact />
+            <Route path="/portfolio-webpage/projects" component={ProjectsPage} />
+            <Route path="/portfolio-webpage/cv" component={CvPage} />
             <Route component={Error} />
         </Switch>
         // TODO: Implement L, W, C components
