@@ -27,14 +27,15 @@ const LandingMain = () => {
         <Card as="article" className="card mb-3">
           <Row noGutters={true}>
             <Col sm={3}>
-              <Image src={`${process.env.PUBLIC_URL}/nachrdb-logo-low-res.jpg`} className="card-img" />
+              <a href="https://aliaksei-chareshneu.github.io/japan-spirit/" title="Japan Spirit web page">
+                {/* <Image src={`${process.env.PUBLIC_URL}/nachrdb-logo-low-res.jpg`} className="card-img" /> */}
+              </a>
             </Col>
             <Col sm={9}>
               <Card.Body>
-                <Card.Title>NAChRDB</Card.Title>
-                {/* TODO: shorten text (twice) */}
-                <Card.Text>NAChRDB is a web application and a database of structural-functional information on nicotinic acetylcholine receptors (nAChRs) – proteins that transfer chemical signals across the nervous system, allowing us to think, feel and move.</Card.Text>
-                <Card.Text><strong>Technologies:</strong> HTML5, Bootstrap, CSS3.0, JavaScript (ES6), JQuery, datatables, intro.js, Google Analytics, Google Tag Manager </Card.Text>
+                <Card.Title>Japan Spirit</Card.Title>
+                <Card.Text>Guess the meaning of a random hieroglyph (kanji) and enjoy the beautiful views of Japan!</Card.Text>
+                <Card.Text><strong>Technologies:</strong> React, HTML5, JavaScript, CSS3</Card.Text>
               </Card.Body>
             </Col>
           </Row>
