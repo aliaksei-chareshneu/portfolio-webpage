@@ -6,7 +6,7 @@ const ProjectItem = (props) => {
         <Card as="article" className="card mb-3">
           <Row noGutters={true}>
             <Col sm={3}>
-              <div className="project-image-container bg-white">
+              <div className="project-image-container" style={{backgroundColor: props.logoBgColor}}>
                 <a href={props.link} title={props.name + " project page"}>
                   <Image src={`${process.env.PUBLIC_URL}/${props.logoFile}`} className="card-img" />
                 </a>

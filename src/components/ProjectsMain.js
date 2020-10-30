@@ -1,61 +1,38 @@
-import React from 'react'
-import {Container} from 'react-bootstrap'
-import projects from '../data/projects' 
+import React, { useEffect, useRef } from 'react'
+import { Container } from 'react-bootstrap'
+import projects from '../data/projects'
 import ProjectItem from './ProjectItem'
 
 const LandingMain = () => {
+  const containerRef = useRef(null)
+
+  useEffect(() => {
+    const maxHeight = [...containerRef.current.children].reduce((a, b) => a.offsetHeight > b.offsetHeight ? a : b).offsetHeight;
+    [...containerRef.current.children].forEach(e => e.children[0].style.height = `${maxHeight}px`);
+  }, [])
+
+  const projectItems = projects.map(p => {
+    return <ProjectItem
+      key={p.name}
+      link={p.link}
+      name={p.name}
+      logoFile={p.logo.filename}
+      logoBgColor={p.logo.bgColor}
+      title={p.title}
+      shortDescription={p.shortDescription}
+      technologies={p.technologies}
+    />
+  })
+  // 1. Determine child node with max height (reduce)
+  // 2. Onmount, Loop/map/forEach to set height of each child node to max height
+
   return (
     <main id="main-content">
-      <Container style={{ zIndex: "2" }}>
-        <ProjectItem link="/portfolio-webpage/projects/nachrdb" name="NAChRDB" logoFile="nachrdb-logo-low-res.jpg"
-          title="Title"
-          shortDescription="Bla-bla-bla"
-          technologies="Coolest"
-        />
-      {/* 
-        <Card as="article" className="card mb-3">
-          <Row noGutters={true}>
-            <Col sm={3}>
-              <div className="project-image-container bg-white">
-                <a href="/portfolio-webpage/projects/nachrdb" title="NAChRDB project page">
-                  <Image src={`${process.env.PUBLIC_URL}/nachrdb-logo-low-res.jpg`} className="card-img" />
-                </a>
-              </div>
-            </Col>
-            <Col sm={9}>
-              <Card.Body>
-                <Card.Title>NAChRDB - Bioinformatics Web Application and Database for Ion Channel Researchers</Card.Title>
-                <Card.Text>NAChRDB is a web application and a database of structural-functional information on nicotinic acetylcholine receptors (nAChRs) – proteins that transfer chemical signals across the nervous system, allowing us to think, feel and move. <a href="/portfolio-webpage/projects/nachrdb">Read more...</a></Card.Text>
-                <Card.Text><strong>Technologies:</strong> HTML5, Bootstrap, CSS3.0, JavaScript (ES6), JQuery, datatables, intro.js, Google Analytics, Google Tag Manager </Card.Text>
-              </Card.Body>
-            </Col>
-          </Row>
-        </Card> */}
-
-
-        {/* <Card as="article" className="card mb-3">
-          <Row noGutters={true}>
-            <Col sm={3}>
-              <a href="https://aliaksei-chareshneu.github.io/japan-spirit/" title="Japan Spirit web page">
-              </a>
-            </Col>
-            <Col sm={9}>
-              <Card.Body>
-                <Card.Title>Japan Spirit</Card.Title>
-                <Card.Text>Guess the meaning of a random hieroglyph (kanji) and enjoy the beautiful views of Japan!</Card.Text>
-                <Card.Text><strong>Technologies:</strong> React, HTML5, JavaScript, CSS3</Card.Text>
-              </Card.Body>
-            </Col>
-          </Row>
-        </Card> */}
-
+      <Container style={{ zIndex: "2" }} ref={containerRef}>
+        {projectItems}
+        
       </Container>
     </main>
-
-
-
-
-
   )
 }
 
