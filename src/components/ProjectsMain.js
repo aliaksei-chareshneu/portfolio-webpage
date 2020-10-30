@@ -8,7 +8,7 @@ const LandingMain = () => {
 
   useEffect(() => {
     const maxHeight = [...containerRef.current.children].reduce((a, b) => a.offsetHeight > b.offsetHeight ? a : b).offsetHeight;
-    [...containerRef.current.children].forEach(e => e.children[0].style.height = `${maxHeight}px`);
+    [...containerRef.current.children].forEach(e => e.children[0].style.minHeight = `${maxHeight}px`);
   }, [])
 
   const projectItems = projects.map(p => {
