@@ -1,10 +1,17 @@
 import React from 'react'
-import { Container, Row, Col, Button, Card, Image } from 'react-bootstrap'
+import {Container} from 'react-bootstrap'
+import ProjectItem from './ProjectItem'
 
 const LandingMain = () => {
   return (
     <main id="main-content">
-      <Container style={{ "z-index": "2" }}>
+      <Container style={{ zIndex: "2" }}>
+        <ProjectItem link="/portfolio-webpage/projects/nachrdb" name="NAChRDB" logoFile="nachrdb-logo-low-res.jpg"
+          title="Title"
+          shortDescription="Bla-bla-bla"
+          technologies="Coolest"
+        />
+      {/* 
         <Card as="article" className="card mb-3">
           <Row noGutters={true}>
             <Col sm={3}>
@@ -22,13 +29,13 @@ const LandingMain = () => {
               </Card.Body>
             </Col>
           </Row>
-        </Card>
+        </Card> */}
 
-        <Card as="article" className="card mb-3">
+
+        {/* <Card as="article" className="card mb-3">
           <Row noGutters={true}>
             <Col sm={3}>
               <a href="https://aliaksei-chareshneu.github.io/japan-spirit/" title="Japan Spirit web page">
-                {/* <Image src={`${process.env.PUBLIC_URL}/nachrdb-logo-low-res.jpg`} className="card-img" /> */}
               </a>
             </Col>
             <Col sm={9}>
@@ -39,7 +46,7 @@ const LandingMain = () => {
               </Card.Body>
             </Col>
           </Row>
-        </Card>
+        </Card> */}
 
       </Container>
     </main>
