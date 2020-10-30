@@ -1,36 +1,44 @@
 const projects = [
     {
         name: "NAChRDB",
-        title: "",
-        link: "",
-        logoFile: "",
-        shortDescription: "",
+        title: "NAChRDB - Bioinformatics Web Application and Database for Ion Channel Researchers",
+        link: "/portfolio-webpage/projects/nachrdb",
+        logo: {
+            filename: "nachrdb-logo-low-res.jpg",
+            bgColor: "#fff",
+        },
+        shortDescription: "NAChRDB is a web application and a database of structural-functional information on nicotinic acetylcholine receptors (nAChRs) – proteins that transfer chemical signals across the nervous system, allowing us to think, feel and move.",
         fullDescription: "",
-        technologies: "",
+        technologies: "HTML5, Bootstrap, CSS3.0, JavaScript (ES6), Python, PHP, JQuery, datatables, intro.js, Google Analytics, Google Tag Manager",
         contribution: [],
         liveLink: "",
         demoFile: "",
     },
     {
-        name: "",
-        title: "",
-        link: "",
-        logoFile: "",
-        shortDescription: "",
+        name: "Japan Spirit",
+        title: "Japan Spirit",
+        link: "https://aliaksei-chareshneu.github.io/japan-spirit/",
+        logo: {
+            filename: "",
+            bgColor: "",
+        },
+        shortDescription: "Guess the meaning of a random hieroglyph (kanji) and enjoy the beautiful views of Japan!",
         fullDescription: "",
-        technologies: "",
+        technologies: "React, HTML5, JavaScript, CSS3",
         contribution: [],
-        liveLink: "",
+        liveLink: "https://aliaksei-chareshneu.github.io/japan-spirit/",
         demoFile: "",
     }
 ]
-
 
 // {
 //     name: "NAChRDB",
 //     title: "",
 //     link: "",
-//     logoFile: "",
+//     logo: {
+//         filename: "",
+//         bgColor: "",
+//     },
 //     shortDescription: "",
 //     fullDescription: "",
 //     technologies: "",
