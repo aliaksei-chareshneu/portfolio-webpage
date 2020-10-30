@@ -1,5 +1,6 @@
 import React from 'react'
 import {Container} from 'react-bootstrap'
+import projects from '../data/projects' 
 import ProjectItem from './ProjectItem'
 
 const LandingMain = () => {
