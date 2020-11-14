@@ -19,8 +19,8 @@ const projects = [
         title: "Japan Spirit",
         link: "https://aliaksei-chareshneu.github.io/japan-spirit/",
         logo: {
-            filename: "",
-            bgColor: "",
+            filename: "japan-spirit-logo-low-res.png",
+            bgColor: "#fff",
         },
         shortDescription: "Guess the meaning of a random hieroglyph (kanji) and enjoy the beautiful views of Japan!",
         fullDescription: "",
