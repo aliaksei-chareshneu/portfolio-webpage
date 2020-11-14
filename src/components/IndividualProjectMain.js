@@ -13,7 +13,7 @@ const IndividualProjectMain = (props) => {
                 <Container>
                     <Row>
                         <Col sm={3}>
-                            <img src={`${process.env.PUBLIC_URL}${p.logoFile}`}
+                            <img src={`${process.env.PUBLIC_URL}/${p.logo.filename}`}
                                 alt={`Here should be ${p.name} logo`}
                                 title={`${p.name} logo`}
                                 className="img-fluid" />
@@ -60,7 +60,15 @@ const IndividualProjectMain = (props) => {
                                     </p>
                                     </section>
                                     : null }
-                                
+                                {p.demoFile
+                                    ? <section>
+                                        <h3>{p.name} demo</h3>
+                                        <img src={`${process.env.PUBLIC_URL}/${p.demoFile}`}
+                                            alt={`Here should be ${p.name} demo`}
+                                            title={`${p.name} demo`}
+                                            className="img-fluid" />
+                                    </section>
+                                    : null }
                             </article>
                         </Col>
                     </Row>
