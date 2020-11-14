@@ -30,7 +30,6 @@ const LandingMain = () => {
     <main id="main-content">
       <Container style={{ zIndex: "2" }} ref={containerRef}>
         {projectItems}
-        
       </Container>
     </main>
   )

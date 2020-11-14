@@ -15,7 +15,7 @@ const ProjectItem = (props) => {
             <Col sm={9}>
               <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
-                <Card.Text>{props.shortDescription} <a href={props.link}>Read more...</a></Card.Text>
+                <Card.Text>{props.shortDescription} <a href={props.link}>More...</a></Card.Text>
                 <Card.Text><strong>Technologies:</strong> {props.technologies}</Card.Text>
               </Card.Body>
             </Col>
