@@ -54,10 +54,10 @@ const projects = [
         },
         shortDescription: "CLI and web API currency converter app. Supports 32 currencies, both 3-letter & symbols, documentation provided",
         fullDescription: "",
-        technologies: "Python, flask, json",
+        technologies: "Python, flask, forex_python, argparse, json",
         contribution: [],
         liveLink: "",
-        demoFile: "",
+        demoFile: "currency_converter_demo.gif",
     },
     {
         name: "Coin Change Algorithm",
@@ -72,7 +72,7 @@ const projects = [
         technologies: "Python",
         contribution: [],
         liveLink: "",
-        demoFile: "",
+        demoFile: "coin_change_demo.gif",
     },
     {
         name: "Dynamic student registration form",
@@ -105,19 +105,19 @@ const projects = [
         demoFile: "",
     },
     {
-        name: "",
-        title: "",
-        link: "",
+        name: "Dungeon Crawler game",
+        title: "Dungeon Crawler game",
+        link: "/portfolio-webpage/projects/dungeon-crawler",
         logo: {
-            filename: "",
-            bgColor: "",
+            filename: "dungeon_crawler_demo.gif",
+            bgColor: "black",
         },
-        shortDescription: "",
+        shortDescription: "CLI adventure game. Player is required to find the key and get out of the dungeon through the door. Player can investigate objects and collect movement increase item.",
         fullDescription: "",
         technologies: "",
         contribution: [],
         liveLink: "",
-        demoFile: "",
+        demoFile: "dungeon_crawler_demo.gif",
     }
 ]
 
