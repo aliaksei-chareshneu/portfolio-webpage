@@ -7,7 +7,7 @@ const projects = [
             filename: "nachrdb-logo-low-res.jpg",
             bgColor: "#fff",
         },
-        shortDescription: "NAChRDB is a web application and a database of structural-functional information on nicotinic acetylcholine receptors (nAChRs) – proteins that transfer chemical signals across the nervous system, allowing us to think, feel and move.",
+        shortDescription: "A web app and a database of functional annotations for synaptic proteins (nicotinic receptors) amino acid residues with interactive 3D visualization of protein models",
         fullDescription: "",
         technologies: "HTML5, Bootstrap, CSS3.0, JavaScript (ES6), Python, PHP, JQuery, datatables, intro.js, Google Analytics, Google Tag Manager",
         contribution: [],

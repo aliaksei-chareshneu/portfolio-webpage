@@ -5,14 +5,14 @@ const ProjectItem = (props) => {
     return (
         <Card as="article" className="card mb-3">
           <Row noGutters={true}>
-            <Col sm={3}>
+            <Col sm={2}>
               <div className="project-image-container" style={{backgroundColor: props.logoBgColor}}>
                 <a href={props.link} title={props.name + " project page"}>
                   <Image src={`${process.env.PUBLIC_URL}/${props.logoFile}`} className="card-img" />
                 </a>
               </div>
             </Col>
-            <Col sm={9}>
+            <Col sm={10}>
               <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
                 <Card.Text>{props.shortDescription} <a href={props.link}>More...</a></Card.Text>
