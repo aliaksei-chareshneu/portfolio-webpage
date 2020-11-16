@@ -84,6 +84,17 @@ const IndividualProjectMain = (props) => {
                             </article>
                         </Col>
                     </Row>
+                    <Row>
+                        <Col sm={4} className="my-2">
+                            <Button variant="dark" size="lg" href="/portfolio-webpage/projects" block>Previous Project</Button>
+                        </Col>
+                        <Col sm={4} className="my-2">
+                            <Button variant="secondary" size="lg" href="/portfolio-webpage/projects" block>Back to Project Selection</Button>
+                        </Col>
+                        <Col sm={4} className="my-2">
+                            <Button variant="dark" size="lg" href="/portfolio-webpage/projects" block>Next Project</Button>
+                        </Col>
+                    </Row>
                 </Container>
             </main>               
         )
